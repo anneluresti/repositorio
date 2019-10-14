@@ -528,7 +528,7 @@
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Listado</a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Editado</a></li>
+								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -1218,15 +1218,15 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tables</span> - Sizing</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">GRUPO 1-1</span> - Editar Materia</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
 					<div class="header-elements d-none">
 						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Estadísticas</span></a>
+							<!--<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>-->
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Agenda</span></a>
 						</div>
 					</div>
 				</div>
@@ -1234,9 +1234,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="table_sizing.html" class="breadcrumb-item">Tables</a>
-							<span class="breadcrumb-item active">Sizing</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
+							<a href="table_sizing.html" class="breadcrumb-item">GRUPO 1-1</a>
+							<span class="breadcrumb-item active">Editar Materias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1246,13 +1246,13 @@
 						<div class="breadcrumb justify-content-center">
 							<a href="#" class="breadcrumb-elements-item">
 								<i class="icon-comment-discussion mr-2"></i>
-								Support
+								Ayuda
 							</a>
 
 							<div class="breadcrumb-elements-item dropdown p-0">
 								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
 									<i class="icon-gear mr-2"></i>
-									Settings
+									Configuración
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right">
@@ -1272,6 +1272,133 @@
 
 			<!-- Content area -->
 			<div class="content">
+				<!-- Basic datatable -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Editar Materia</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<!--<div class="card-body">
+						The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong>
+					</div>-->
+					<div class="datatable-header">
+						<div id="DataTables_Table_0_filter" class="dataTables_filter">
+							<label>
+								<span> Filter: </span>
+								<input type="Search" class placeholder="Type to filter..." aria-control="DataTables_Table_0_filter">
+							</label>
+					</div>
+
+					<table class="table datatable-basic">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Clave</th>
+								<th>Cuatrimestre</th>
+								<th>Idioma</th>
+								<th>Estatus</th>
+								<th class="text-center">Acciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Álgebra</td>
+								<td>1894</td>
+								<td>3</td>
+								<td>Español</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-people"></i> Editar</a>
+												<!--<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Química</td>
+								<td>1895</td>
+								<td>1</td>
+								<td>Español</td>
+								<td><span class="badge badge-success">Active</span>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-people"></i> Editar</a>
+												<!--<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<!--<tr>
+								<td>Grecia</td>
+								<td>García</td>
+								<td>Ing. Tecnologías de la información</td>
+								<td>1930075</td>
+								<td><span class="badge badge-success">Active</span>
+								<td class="text-center">
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-people"></i> Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>-->
+							<tr>
+								<td>Expresión Oral y Escrita</td>
+								<td>1896</td>
+								<td>1</td>
+								<td>Español</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-people"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							
+
+			</div>
 
 				<!-- Extra large table 
 				<div class="card">
