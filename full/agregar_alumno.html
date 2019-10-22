@@ -23,17 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="https://maps.google.com/maps/api/js?key=AIzaSyAPQXi7ZBZ73SPXi7JfHycSCi30thvQGCg&amp;libraries=places"></script>
-
-	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/typeahead_addresspicker.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/autocomplete_addresspicker.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/location/location.js"></script>
-	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/picker_location.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_layouts.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -407,17 +401,17 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">INICIO</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
 							<a href="index.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
-									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+									Principal
+									<!-- Main <span class="d-block font-weight-normal opacity-50">No active orders</span>-->
 								</span>
 							</a>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<!--<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
@@ -482,10 +476,10 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>-->
 						<!-- /main -->
 
-						<!-- Forms -->
+						<!-- Forms 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
@@ -521,28 +515,67 @@
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">Trumbowyg editor</a></li>
 								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
 							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>Pickers</span></a>
+						</li>-->
+							<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>MAESTROS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">Date &amp; time pickers</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">Color pickers</a></li>
-								<li class="nav-item"><a href="picker_location.html" class="nav-link active">Location pickers</a></li>
+								<!--<li class="nav-item"><a href="picker_date.html" class="nav-link">Agregar</a></li>-->
+								<li class="nav-item"><a href="listado_maestros.html" class="nav-link">Listado</a></li>
+								<li class="nav-item"><a href="editar_maestros.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
-								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item"><a href="agregar_alumno.html" class="nav-link">Agregar</a></li>
+								
+								<!--  
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+
+								<li class="nav-item"><a href="listado_alumno.html" class="nav-link">Listado</a></li>
+
+								<li class="nav-item-divider"></li>
+
+								<li class="nav-item"><a href="editar_alumno.html" class="nav-link">Editar</a></li>
+								
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-menu"></i> <span>GRUPO 1-1</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="agregar_materia.html" class="nav-link">Agregar Materia</a></li>
+								
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="listado_materia" class="nav-link">Listado Materias</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="editar_materia.html" class="nav-link">Editar Materias</a></li>
+								
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-menu7"></i> <span>TRANSPORTE</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="content_text_styling.html" class="nav-link">Agregar pago</a></li>
+								
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="agregar_tutoria.html" class="nav-link">Agregar Tutoria</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="listado_tutoria.html" class="nav-link">Listado Tutoria</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="editar_tutoria.html" class="nav-link">Editar Tutorias</a></li>
+								
+								
+							</ul>
+						</li>
+
 						<!-- /forms -->
 
-						<!-- Components -->
+						<!-- Components 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -644,10 +677,10 @@
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /components -->
 
-						<!-- Layout -->
+						<!-- Layout 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -809,10 +842,10 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /layout -->
 
-						<!-- Data visualization -->
+						<!-- Data visualization 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -913,10 +946,10 @@
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /data visualization -->
 
-						<!-- Extensions -->
+						<!-- Extensions 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -961,10 +994,10 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /extensions -->
 
-						<!-- Tables -->
+						<!-- Tables 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
@@ -1030,10 +1063,10 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /tables -->
 
-						<!-- Page kits -->
+						<!-- Page kits 
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1194,7 +1227,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1215,15 +1248,15 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Pickers</span> - Location</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">ALUMNO</span> - Agregar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
 					<div class="header-elements d-none">
 						<div class="d-flex justify-content-center">
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Estadisticas</span></a>
+							<!--<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>-->
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Agenda</span></a>
 						</div>
 					</div>
 				</div>
@@ -1231,9 +1264,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="picker_location.html" class="breadcrumb-item">Pickers</a>
-							<span class="breadcrumb-item active">Location</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">ALUMNO </a>
+							<span class="breadcrumb-item active">Agregar</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1243,13 +1276,13 @@
 						<div class="breadcrumb justify-content-center">
 							<a href="#" class="breadcrumb-elements-item">
 								<i class="icon-comment-discussion mr-2"></i>
-								Support
+								Ayuda
 							</a>
 
 							<div class="breadcrumb-elements-item dropdown p-0">
 								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
 									<i class="icon-gear mr-2"></i>
-									Settings
+									Configuración
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right">
@@ -1270,10 +1303,47 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic location picker -->
+				<!-- Horizontal form options -->
+				<div class="row">
+					<div class="col-md-6">
+
+						
+
+					</div>
+
+					<div class="col-md-6">
+
+						
+
+					</div>
+				</div>
+				<!-- /vertical form options -->
+
+
+				
+				
+
+
+				<!-- Fieldset legend -->
+				<div class="row">
+					<div class="col-md-6">
+
+						
+
+					</div>
+
+					<div class="col-md-6">
+
+						
+					</div>
+				</div>
+				<!-- /fieldset legend -->
+
+
+				<!-- 2 columns form -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Location picker</h5>
+						<h5 class="card-title">DATOS DEL ALUMNO</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1284,202 +1354,152 @@
 					</div>
 
 					<div class="card-body">
-						<p class="mb-3">This plug-in allows to easily find and select a location on the Google map. Along with a single point selection, it allows to choose an area by providing its center and the radius. All the data can be saved to any HTML input element automatically as well as be processed by Javascript (callback support).</p>
-						<div class="map-container locationpicker-default"></div>
-					</div>
-				</div>
-				<!-- /basic location picker -->
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles Personales</legend>
 
-
-				<!-- Manipulating from callback -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Manipulating from callback</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<p class="mb-3">If you need direct access to the actual Google Maps widget you can use map method as follows. This example illustrates how to set zoom pragmatically each time when location has been changed.</p>
-						<div class="map-container locationpicker-manipulate"></div>
-					</div>
-				</div>
-				<!-- /manipulating from callback -->
-
-
-				<!-- Location picker -->
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Binding UI with the widget</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Location:</label>
-									<input type="text" class="form-control" id="us2-address">
-								</div>
-
-								<div class="form-group">
-									<label>Radius:</label>
-									<input type="text" class="form-control" id="us2-radius">
-								</div>
-
-								<div class="form-group">
-									<div id="us2" class="map-container"></div>
-								</div>
-
-								<div class="form-group">
-									<label>Latitude:</label>
-									<input type="text" class="form-control" id="us2-lat">
-								</div>
-
-								<div class="form-group">
-									<label>Longitude:</label>
-									<input type="text" class="form-control" id="us2-lon">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Subscribing for events</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Location:</label>
-									<input type="text" class="form-control" id="us3-address">
-								</div>
-
-								<div class="form-group">
-									<label>Radius:</label>
-									<input type="text" class="form-control" id="us3-radius">
-								</div>
-
-								<div class="form-group">
-									<div id="us3" class="map-container"></div>
-								</div>
-
-								<div class="form-group">		
-									<label>Latitude:</label>
-									<input type="text" class="form-control" id="us3-lat">
-								</div>
-
-								<div class="form-group">
-									<label>Longitude:</label>
-									<input type="text" class="form-control" id="us3-lon">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /location picker -->
-
-
-				<!-- Address pickers -->
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Typeahead address picker</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="form-group">
-									<label>Address input</label>
-									<input id="address" class="form-control typeahead" type="text" placeholder="Enter an address">
-								</div>
-
-								<div class="form-group">
-									<div id="map" class="map-container mb-2"></div>
-									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
-								</div>
-
-								<div class="form-group">
-									<label>Response</label>
-									<pre class="language-javascript" id="response"><code>Address Output</code></pre>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Autocomplete address picker</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Address:</label>
-											<input id="addresspicker_map" class="form-control" placeholder="Enter an address">
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matrícula:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Ej. 1930000">
+											</div>
 										</div>
-									</div>
 
-									<div class="col-md-6">
-										<div class="form-group">
-											<label id="geo_label" for="reverseGeocode">Reverse Geocode after Marker Drag?</label>
-											<select id="reverseGeocode" class="form-control">
-												<option value="false" selected>No</option>
-												<option value="true">Yes</option>
-											</select>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Contraseña:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+											</div>
 										</div>
-									</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Selecciona tu estado:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona tu estado" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup>
+														<option value="AK">Aguascalientes</option>
+														<option value="HI">Baja California</option>
+														<option value="HI">Baja California Sur</option>
+														<option value="HI">Campeche</option>
+														<option value="HI">Coahuila</option>
+														<option value="HI">Tamaulipas</option>
+
+													</optgroup>
+													
+												</select>
+											</div>
+										</div>
+										<!--COPIADO -->
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Selecciona tu carrera:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona tu carrera" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup>
+														<option value="AK">ITI</option>
+														<option value="HI">ISA</option>
+														<option value="HI">LAYGE</option>
+														
+
+													</optgroup>
+													
+												</select>
+											</div>
+										</div>
+										<!--COPIADO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										
+
+										
+									</fieldset>
 								</div>
 
-								<div class="form-group">
-									<div id="map2" class="map-container mb-2"></div>
-									<span class="form-text text-muted">You can drag and drop the marker to the correct location</span>
-								</div>
 
-								<div class="form-group">
-									<label>Response:</label>
-									<pre class="language-javascript" id="response2"><code>Address Output</code></pre>
+								<div class="col-md-6">
+									<fieldset>
+										<!--COPIADO 
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Detalles escolares</legend>-->
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre completo:</label>
+											<div class="col-lg-9">
+												<div class="row">
+													<div class="col-md-6">
+														<input type="text" placeholder="Nombre" class="form-control">
+													</div>
+
+													<div class="col-md-6">
+														<input type="text" placeholder="Apellido" class="form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Correo:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="matricula@upv.edu.mx" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Teléfono #:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="+99-99-9999-9999" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Ciudad:</label>
+											<div class="col-lg-9">
+												<div class="row">
+													
+
+													<div class="col-md-6">
+														<input type="text" placeholder="Ciudad/Localidad" class="form-control mb-3">
+														
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Dirección:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Dirección actual" class="form-control">
+											</div>
+										</div>
+
+										
+									</fieldset>
 								</div>
 							</div>
-						</div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Agregar <i class="icon-paperplane ml-2"></i></button>
+							</div>
+						</form>
 					</div>
 				</div>
-				<!-- /address pickers -->
+				<!-- /2 columns form -->
 
 			</div>
 			<!-- /content area -->

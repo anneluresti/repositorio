@@ -23,11 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_layouts.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -407,8 +411,6 @@
 								<i class="icon-home4"></i>
 								<span>
 									Principal
-									<!--<span class="d-block font-weight-normal opacity-50">No active orders</span>-->
-								</span>
 							</a>
 						</li>
 						<!--<li class="nav-item nav-item-submenu">
@@ -479,8 +481,8 @@
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>-->
 						<!-- /main -->
 
-						<!-- Forms 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						<!-- Forms -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -499,10 +501,10 @@
 								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link active">Basic inputs</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
 							</ul>
@@ -517,41 +519,39 @@
 							</ul>
 						</li>-->
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>MAESTRO</span></a>
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>MAESTROS</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-
 								<!--<li class="nav-item"><a href="picker_date.html" class="nav-link">Agregar</a></li>-->
-
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link">Listado</a></li>
-
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="listado_maestros.html" class="nav-link">Listado</a></li>
+								<li class="nav-item"><a href="editar_maestros.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>ALUMNO</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-							<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="agregar_alumno.html" class="nav-link">Agregar</a></li>
 								
-								<!--<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
+								<!--  
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link active">Listado</a></li>
+
+								<li class="nav-item"><a href="listado_alumno.html" class="nav-link">Listado</a></li>
+
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Editar</a></li>
+
+								<li class="nav-item"><a href="editar_alumno.html" class="nav-link">Editar</a></li>
 								
-								<!--<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-menu"></i> <span>GRUPO 1-1</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Agregar Materia</a></li>
+								<li class="nav-item"><a href="agregar_materia.html" class="nav-link">Agregar Materia</a></li>
 								
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="table_borders.html" class="nav-link">Listado Materias</a></li>
+								<li class="nav-item"><a href="listado_materia.html" class="nav-link">Listado Materias</a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Editar Materias</a></li>
+								<li class="nav-item"><a href="editar_materia.html" class="nav-link">Editar Materias</a></li>
 								
 							</ul>
 						</li>
@@ -560,17 +560,24 @@
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="content_text_styling.html" class="nav-link">Agregar pago</a></li>
 								
-								<!--<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="table_borders.html" class="nav-link">Listado Materias</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>TUTORIAS</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="agregar_tutoria.html" class="nav-link">Agregar Tutoria</a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="table_sizing.html" class="nav-link">Editar Materias</a></li>-->
+								<li class="nav-item"><a href="listado_tutoria.html" class="nav-link">Listado Tutoria</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="editar_tutoria.html" class="nav-link">Editar Tutorias</a></li>
+								
 								
 							</ul>
-						</li>R
+						</li>
 						<!-- /forms -->
 
-						<!-- Components 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
+						<!-- Components -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
@@ -839,8 +846,8 @@
 						</li>-->
 						<!-- /layout -->
 
-						<!-- Data visualization 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
+						<!-- Data visualization -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="ECharts library">
@@ -943,8 +950,8 @@
 						</li>-->
 						<!-- /data visualization -->
 
-						<!-- Extensions 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
+						<!-- Extensions -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Extensions">
@@ -991,8 +998,8 @@
 						</li>-->
 						<!-- /extensions -->
 
-						<!-- Tables 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
+						<!-- Tables -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
@@ -1060,8 +1067,8 @@
 						</li>-->
 						<!-- /tables -->
 
-						<!-- Page kits 
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
+						<!-- Page kits -->
+						<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="General pages">
@@ -1242,14 +1249,14 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">ALUMNO</span> - Listado</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">TUTORIÍAS</span> - Listado Tutorías</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
 					<div class="header-elements d-none">
 						<div class="d-flex justify-content-center">
 							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Estadísticas</span></a>
-							<!--<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>-->
+						
 							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Agenda</span></a>
 						</div>
 					</div>
@@ -1258,9 +1265,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i>Inicio</a>
-							<a href="form_layout_vertical.html" class="breadcrumb-item">ALUMNO</a>
-							<span class="breadcrumb-item active">Listado</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
+							<a href="alpaca_basic.html" class="breadcrumb-item">TUTORIAS</a>
+							<span class="breadcrumb-item active">Listado Tutorias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1295,713 +1302,9 @@
 
 
 			<!-- Content area -->
-			<div class="content">
-
-				<!-- Vertical form options -->
-				<div class="row">
-					<div class="col-md-6">
-
-						<!-- Basic layout
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic layout</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<div class="form-group">
-										<label>Name:</label>
-										<input type="text" class="form-control" placeholder="Eugene Kopyov">
-									</div>
-
-									<div class="form-group">
-										<label>Password:</label>
-										<input type="password" class="form-control" placeholder="Your strong password">
-									</div>
-
-									<div class="form-group">
-										<label>Your state:</label>
-										<select class="form-control form-control-select2" data-fouc>
-											<optgroup label="Alaskan/Hawaiian Time Zone">
-												<option value="AK">Alaska</option>
-												<option value="HI">Hawaii</option>
-											</optgroup>
-											<optgroup label="Pacific Time Zone">
-												<option value="CA">California</option>
-												<option value="NV">Nevada</option>
-												<option value="WA">Washington</option>
-											</optgroup>
-											<optgroup label="Mountain Time Zone">
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="WY">Wyoming</option>
-											</optgroup>
-											<optgroup label="Central Time Zone">
-												<option value="AL">Alabama</option>
-												<option value="AR">Arkansas</option>
-												<option value="KY">Kentucky</option>
-											</optgroup>
-											<optgroup label="Eastern Time Zone">
-												<option value="CT">Connecticut</option>
-												<option value="DE">Delaware</option>
-												<option value="FL">Florida</option>
-											</optgroup>
-										</select>
-									</div>
-
-									<div class="form-group">
-										<label class="d-block">Gender:</label>
-
-										<div class="form-check form-check-inline">
-											<label class="form-check-label">
-												<input type="radio" class="form-input-styled" name="gender" checked data-fouc>
-												Male
-											</label>
-										</div>
-
-										<div class="form-check form-check-inline">
-											<label class="form-check-label">
-												<input type="radio" class="form-input-styled" name="gender" data-fouc>
-												Female
-											</label>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label>Your avatar:</label>
-										<input type="file" class="form-input-styled" data-fouc>
-										<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-									</div>
-
-									<div class="form-group">
-										<label>Tags:</label>
-										<select multiple="multiple" data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
-											<optgroup label="Services">
-												<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-												<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-												<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-												<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-												<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-											</optgroup>
-											<optgroup label="File types">
-												<option value="pdf" data-icon="file-pdf">PDF</option>
-												<option value="word" data-icon="file-word">Word</option>
-												<option value="excel" data-icon="file-excel">Excel</option>
-												<option value="openoffice" data-icon="file-openoffice">Open office</option>
-											</optgroup>
-											<optgroup label="Browsers">
-												<option value="chrome" data-icon="chrome" selected>Chrome</option>
-												<option value="firefox" data-icon="firefox" selected>Firefox</option>
-												<option value="safari" data-icon="safari">Safari</option>
-												<option value="opera" data-icon="opera">Opera</option>
-												<option value="IE" data-icon="IE">IE</option>
-											</optgroup>
-										</select>
-									</div>
-
-									<div class="form-group">
-										<label>Your message:</label>
-										<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-									</div>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /basic layout -->
-
-					</div>
-
-					<div class="col-md-6">
-
-						<!-- Static mode 
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Static mode</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<div class="form-group">
-										<label class="font-weight-semibold">Name:</label>
-										<div class="form-control-plaintext">Eugene Kopyov</div>
-									</div>
-
-									<div class="form-group">
-										<label class="font-weight-semibold">Password:</label>
-										<input type="password" class="form-control" readonly value="********">
-									</div>
-
-									<div class="form-group">
-										<label class="font-weight-semibold">Your state:</label>
-										<select class="form-control form-control-select2" disabled data-fouc>
-											<optgroup label="Alaskan/Hawaiian Time Zone">
-												<option value="AK">Alaska</option>
-												<option value="HI">Hawaii</option>
-											</optgroup>
-											<optgroup label="Pacific Time Zone">
-												<option value="CA">California</option>
-												<option value="NV" selected>Nevada</option>
-												<option value="WA">Washington</option>
-											</optgroup>
-											<optgroup label="Mountain Time Zone">
-												<option value="AZ">Arizona</option>
-												<option value="CO">Colorado</option>
-												<option value="WY">Wyoming</option>
-											</optgroup>
-											<optgroup label="Central Time Zone">
-												<option value="AL">Alabama</option>
-												<option value="AR">Arkansas</option>
-												<option value="KY">Kentucky</option>
-											</optgroup>
-											<optgroup label="Eastern Time Zone">
-												<option value="CT">Connecticut</option>
-												<option value="DE">Delaware</option>
-												<option value="FL">Florida</option>
-											</optgroup>
-										</select>
-									</div>
-
-									<div class="form-group">
-										<label class="d-block font-weight-semibold">Gender:</label>
-
-										<div class="form-check form-check-inline disabled">
-											<label class="form-check-label">
-												<input type="radio" class="form-input-styled" name="gender" disabled checked data-fouc>
-												Male
-											</label>
-										</div>
-
-										<div class="form-check form-check-inline disabled">
-											<label class="form-check-label">
-												<input type="radio" class="form-input-styled" name="gender" disabled data-fouc>
-												Female
-											</label>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="font-weight-semibold">Your avatar:</label>
-										<div class="media mt-0">
-											<div class="mr-3">
-												<a href="#">
-													<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="60" height="60" class="rounded-round" alt="">
-												</a>
-											</div>
-
-											<div class="media-body">
-												<input type="file" class="form-input-styled" disabled data-fouc>
-												<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="font-weight-semibold">Tags:</label>
-										<select multiple="multiple" disabled data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
-											<optgroup label="Services">
-												<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-												<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-												<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-												<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-												<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-											</optgroup>
-											<optgroup label="File types">
-												<option value="pdf" data-icon="file-pdf">PDF</option>
-												<option value="word" data-icon="file-word">Word</option>
-												<option value="excel" data-icon="file-excel">Excel</option>
-												<option value="openoffice" data-icon="file-openoffice">Open office</option>
-											</optgroup>
-											<optgroup label="Browsers">
-												<option value="chrome" data-icon="chrome" selected>Chrome</option>
-												<option value="firefox" data-icon="firefox" selected>Firefox</option>
-												<option value="safari" data-icon="safari">Safari</option>
-												<option value="opera" data-icon="opera">Opera</option>
-												<option value="IE" data-icon="IE">IE</option>
-											</optgroup>
-										</select>
-									</div>
-
-									<div class="form-group">
-										<label class="font-weight-semibold">Your message:</label>
-										<div class="form-control-plaintext">
-											<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-											His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
-										</div>
-									</div>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /static mode -->
-
-					</div>
-				</div>
-				<!-- /vertical form options -->
-
-
-				<!-- Centered forms 
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header">
-								<div class="row">
-									<div class="col-md-10 offset-md-1">
-										<div class="header-elements-inline">
-											<h5 class="card-title">Centered form</h5>
-											<div class="header-elements">
-												<div class="list-icons">
-							                		<a class="list-icons-item" data-action="collapse"></a>
-							                		<a class="list-icons-item" data-action="reload"></a>
-							                		<a class="list-icons-item" data-action="remove"></a>
-							                	</div>
-						                	</div>
-					                	</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-10 offset-md-1">
-										<form action="#">
-											<div class="form-group">
-												<label>Enter your name:</label>
-												<input type="text" class="form-control" placeholder="Eugene Kopyov">
-											</div>
-
-											<div class="form-group">
-												<label>Enter your password:</label>
-												<input type="password" class="form-control" placeholder="Your strong password">
-											</div>
-
-											<div class="form-group">
-												<label>Select your state:</label>
-												<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-													<option></option>
-													<optgroup label="Alaskan/Hawaiian Time Zone">
-														<option value="AK">Alaska</option>
-														<option value="HI">Hawaii</option>
-													</optgroup>
-													<optgroup label="Pacific Time Zone">
-														<option value="CA">California</option>
-														<option value="OR">Oregon</option>
-														<option value="WA">Washington</option>
-													</optgroup>
-													<optgroup label="Mountain Time Zone">
-														<option value="AZ">Arizona</option>
-														<option value="CO">Colorado</option>
-														<option value="WY">Wyoming</option>
-													</optgroup>
-													<optgroup label="Central Time Zone">
-														<option value="AL">Alabama</option>
-														<option value="KS">Kansas</option>
-														<option value="KY">Kentucky</option>
-													</optgroup>
-													<optgroup label="Eastern Time Zone">
-														<option value="CT">Connecticut</option>
-														<option value="DE">Delaware</option>
-														<option value="WV">West Virginia</option>
-													</optgroup>
-												</select>
-											</div>
-
-											<div class="form-group">
-												<label>Attach screenshot:</label>
-												<input type="file" class="form-input-styled" data-fouc>
-												<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-											</div>
-
-											<div class="form-group">
-												<label>Your message:</label>
-												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-											</div>
-
-											<div class="text-right">
-												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-10 offset-md-1">
-								<div class="card">
-									<div class="card-header header-elements-inline">
-										<h5 class="card-title">Centered card</h5>
-										<div class="header-elements">
-											<div class="list-icons">
-						                		<a class="list-icons-item" data-action="collapse"></a>
-						                		<a class="list-icons-item" data-action="reload"></a>
-						                		<a class="list-icons-item" data-action="remove"></a>
-						                	</div>
-					                	</div>
-									</div>
-
-									<div class="card-body">
-										<form action="#">
-										<div class="form-group">
-											<label>Enter your name:</label>
-											<input type="text" class="form-control" placeholder="Eugene Kopyov">
-										</div>
-
-										<div class="form-group">
-											<label>Enter your password:</label>
-											<input type="password" class="form-control" placeholder="Your strong password">
-										</div>
-
-										<div class="form-group">
-											<label>Select your state:</label>
-											<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-												<option></option>
-												<optgroup label="Alaskan/Hawaiian Time Zone">
-													<option value="AK">Alaska</option>
-													<option value="HI">Hawaii</option>
-												</optgroup>
-												<optgroup label="Pacific Time Zone">
-													<option value="CA">California</option>
-													<option value="NV">Nevada</option>
-													<option value="WA">Washington</option>
-												</optgroup>
-												<optgroup label="Mountain Time Zone">
-													<option value="AZ">Arizona</option>
-													<option value="CO">Colorado</option>
-													<option value="ID">Idaho</option>
-												</optgroup>
-												<optgroup label="Central Time Zone">
-													<option value="AL">Alabama</option>
-													<option value="IA">Iowa</option>
-													<option value="KS">Kansas</option>
-												</optgroup>
-												<optgroup label="Eastern Time Zone">
-													<option value="CT">Connecticut</option>
-													<option value="DE">Delaware</option>
-													<option value="WV">West Virginia</option>
-												</optgroup>
-											</select>
-										</div>
-
-										<div class="form-group">
-											<label>Attach screenshot:</label>
-											<input type="file" class="form-input-styled" data-fouc>
-											<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-										</div>
-
-										<div class="form-group">
-											<label>Your message:</label>
-											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-										</div>
-
-										<div class="text-right">
-											<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-										</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>-->
-				<!-- /form centered -->
-
-
-				<!-- Fieldset legend -->
-				<div class="row">
-					<div class="col-md-6">
-
-						<!-- Basic legend 
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic legend</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">Enter your information</legend>
-
-										<div class="form-group">
-											<label>Enter your name:</label>
-											<input type="text" class="form-control" placeholder="Eugene Kopyov">
-										</div>
-
-										<div class="form-group">
-											<label>Enter your password:</label>
-											<input type="password" class="form-control" placeholder="Your strong password">
-										</div>
-
-										<div class="form-group">
-											<label>Repeat password:</label>
-											<input type="password" class="form-control" placeholder="Repeat password">
-										</div>
-
-										<div class="form-group">
-											<label>Your message:</label>
-											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-										</div>
-									</fieldset>
-
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">Add personal details</legend>
-
-			                			<div class="form-group">
-											<label>Your country:</label>
-		                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
-		                                        <option value="USA">USA</option> 
-		                                        <option value="United Kingdom">United Kingdom</option> 
-		                                        <option value="...">...</option> 
-		                                        <option value="Australia">Australia</option> 
-		                                    </select>
-			                			</div>
-
-										<div class="form-group">
-											<label>Select your state:</label>
-											<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-												<option></option>
-												<optgroup label="Alaskan/Hawaiian Time Zone">
-													<option value="AK">Alaska</option>
-													<option value="HI">Hawaii</option>
-												</optgroup>
-												<optgroup label="Pacific Time Zone">
-													<option value="CA">California</option>
-													<option value="NV">Nevada</option>
-													<option value="WA">Washington</option>
-												</optgroup>
-												<optgroup label="Mountain Time Zone">
-													<option value="AZ">Arizona</option>
-													<option value="CO">Colorado</option>
-													<option value="WY">Wyoming</option>
-												</optgroup>
-												<optgroup label="Central Time Zone">
-													<option value="AL">Alabama</option>
-													<option value="AR">Arkansas</option>
-													<option value="KY">Kentucky</option>
-												</optgroup>
-												<optgroup label="Eastern Time Zone">
-													<option value="CT">Connecticut</option>
-													<option value="DE">Delaware</option>
-													<option value="FL">Florida</option>
-												</optgroup>
-											</select>
-										</div>
-
-			                			<div class="form-group">
-											<label class="d-block">Gender:</label>
-
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
-													Male
-												</label>
-											</div>
-
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" name="gender2" class="form-input-styled" data-fouc>
-													Female
-												</label>
-											</div>
-			                			</div>
-
-										<div class="form-group">
-											<label>Your CV:</label>
-											<input type="file" class="form-input-styled" data-fouc>
-											<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
-										</div>
-
-			                			<div class="form-group">
-											<label>About yourself:</label>
-		                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
-			                			</div>
-									</fieldset>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /basic legend -->
-
-					</div>
-
-					<div class="col-md-6">
-
-						<!-- Advanced legend 
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced legend</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">
-											<i class="icon-file-text2 mr-2"></i>
-											Enter your information
-											<a href="#" class="float-right text-default" data-toggle="collapse" data-target="#demo1">
-												<i class="icon-circle-down2"></i>
-											</a>
-										</legend>
-
-										<div class="collapse show" id="demo1">
-											<div class="form-group">
-												<label>Enter your name:</label>
-												<input type="text" class="form-control" placeholder="Eugene Kopyov">
-											</div>
-
-											<div class="form-group">
-												<label>Enter your password:</label>
-												<input type="password" class="form-control" placeholder="Your strong password">
-											</div>
-
-											<div class="form-group">
-												<label>Repeat password:</label>
-												<input type="password" class="form-control" placeholder="Repeat password">
-											</div>
-
-											<div class="form-group">
-												<label>Your message:</label>
-												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-											</div>
-										</div>
-									</fieldset>
-
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">
-											<i class="icon-reading mr-2"></i>
-											Add personal details
-											<a class="float-right text-default" data-toggle="collapse" data-target="#demo2">
-												<i class="icon-circle-down2"></i>
-											</a>
-										</legend>
-
-										<div class="collapse show" id="demo2">
-				                			<div class="form-group">
-												<label>Your country:</label>
-			                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
-			                                        <option value="USA">USA</option> 
-			                                        <option value="United Kingdom">United Kingdom</option> 
-			                                        <option value="...">...</option> 
-			                                        <option value="Australia">Australia</option> 
-			                                    </select>
-				                			</div>
-
-											<div class="form-group">
-												<label>Select your state:</label>
-												<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-													<option></option>
-													<optgroup label="Alaskan/Hawaiian Time Zone">
-														<option value="AK">Alaska</option>
-														<option value="HI">Hawaii</option>
-													</optgroup>
-													<optgroup label="Pacific Time Zone">
-														<option value="CA">California</option>
-														<option value="NV">Nevada</option>
-														<option value="WA">Washington</option>
-													</optgroup>
-													<optgroup label="Mountain Time Zone">
-														<option value="AZ">Arizona</option>
-														<option value="CO">Colorado</option>
-														<option value="WY">Wyoming</option>
-													</optgroup>
-													<optgroup label="Central Time Zone">
-														<option value="AL">Alabama</option>
-														<option value="AR">Arkansas</option>
-														<option value="KY">Kentucky</option>
-													</optgroup>
-													<optgroup label="Eastern Time Zone">
-														<option value="CT">Connecticut</option>
-														<option value="DE">Delaware</option>
-														<option value="FL">Florida</option>
-													</optgroup>
-												</select>
-											</div>
-
-				                			<div class="form-group">
-												<label class="d-block">Gender:</label>
-
-												<div class="form-check form-check-inline">
-													<label class="form-check-label">
-														<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
-														Male
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline">
-													<label class="form-check-label">
-														<input type="radio" name="gender2" class="form-input-styled" data-fouc>
-														Female
-													</label>
-												</div>
-				                			</div>
-
-											<div class="form-group">
-												<label>Your CV:</label>
-												<input type="file" class="form-input-styled" data-fouc>
-												<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
-											</div>
-
-				                			<div class="form-group">
-												<label>About yourself:</label>
-			                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
-				                			</div>
-			                			</div>
-									</fieldset>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /advanced legend -->
-
-					</div>
-				</div>
-				<!-- /fieldset legend -->
-
-				<!-- Scrollable datatable -->
-				<div class="card">
+			<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de alumnos</h5>
+						<h5 class="card-title">Editar Alumno</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2012,93 +1315,72 @@
 					</div>
 
 					<!--<div class="card-body">
-						This example shows the DataTables table body <code>scrolling</code> in the <code>vertical</code> direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here. Note that this is not mandatory, it will work just fine with pagination enabled as well!.
+						The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong>
 					</div>-->
 
-					<table class="table datatable-scroll-y" width="100%">
+					<table class="table datatable-basic">
 						<thead>
 							<tr>
-								<th>Nombre</th>
-								<th>Apellido</th>
+								<th>Alumno</th>
+								<th>Maestro</th>
 								<th>Carrera</th>
-								<th>Matrícula</th>
+								<th>Fecha</th>
 								<th>Estatus</th>
-								<!--<th class="text-center">Acciones</th>-->
+								<th class="text-center">Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Annel</td>
-								<td>Uresti</td>
+								<td>Annel Uresti</td>
+								<td>Francisco Torres </td>
 								<td>Ing. Tecnologías de la información</td>
-								<td>1930080</td>
+								<td>22/10/19</td>
 								<td><span class="badge badge-success">Active</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
-											<!--<a href="#" class="list-icons-item" data-toggle="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Ver</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												
+												<!--<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td>Esmeralda</td>
-								<td>Arjona</td>
+								<td>Esmeralda Arjona</td>
+								<td>Luisa Barba</td>
 								<td>Ing. Tecnologías de la información</td>
-								<td>1930082</td>
-								<td><span class="badge badge-success">Active</span></td>
+								<td>19/10/19</td>
+								<td><span class="badge badge-success">Active</span>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
-											<!--<a href="#" class="list-icons-item" data-toggle="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Grecia</td>
-								<td>García</td>
-								<td>Ing. Tecnologías de la información</td>
-								<td>1920076</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<!--<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												
+												<!--<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>-->
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
 							<!--<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
+								<td>Grecia</td>
+								<td>García</td>
+								<td>Ing. Tecnologías de la información</td>
+								<td>1930075</td>
+								<td><span class="badge badge-success">Active</span>
+								<td class="text-center">
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -2107,107 +1389,19 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-people"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
 									</div>
 								</td>
-							</tr>
+							</tr>-->
 							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
+								<td>Grecia García</td>
+								<td>Laura Barrón</td>
+								<td>Ing. Tecnologías de la información</td>
+								<td>21/10/19</td>
 								<td><span class="badge badge-success">Active</span></td>
 								<td class="text-center">
 									<div class="list-icons">
@@ -2217,328 +1411,835 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												<a href="#" class="dropdown-item"><i class="icon-calculator"></i> Eliminar</a>
+												
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+							
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+			</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+				<!-- Text inputs title -->
+				<!--<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Text inputs
+					</h6>
+					<span class="text-muted d-block">Input fields with options</span>
 				</div>-->
-				<!-- /scrollable datatable -->
+				<!-- /text inputs title -->
 
 
-
-
-
-
-
-
-
-				<!-- 2 columns form 
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Multiple columns</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<form action="#">
-							<div class="row">
-								<div class="col-md-6">
-									<fieldset>
-										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Personal details</legend>
-
-										<div class="form-group">
-											<label>Enter your name:</label>
-											<input type="text" class="form-control" placeholder="Eugene Kopyov">
-										</div>
-
-										<div class="form-group">
-											<label>Enter your password:</label>
-											<input type="password" class="form-control" placeholder="Your strong password">
-										</div>
-
-										<div class="form-group">
-											<label>Select your state:</label>
-											<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-												<option></option>
-												<optgroup label="Alaskan/Hawaiian Time Zone">
-													<option value="AK">Alaska</option>
-													<option value="HI">Hawaii</option>
-												</optgroup>
-												<optgroup label="Pacific Time Zone">
-													<option value="CA">California</option>
-													<option value="NV">Nevada</option>
-													<option value="WA">Washington</option>
-												</optgroup>
-												<optgroup label="Mountain Time Zone">
-													<option value="AZ">Arizona</option>
-													<option value="CO">Colorado</option>
-													<option value="WY">Wyoming</option>
-												</optgroup>
-												<optgroup label="Central Time Zone">
-													<option value="AL">Alabama</option>
-													<option value="AR">Arkansas</option>
-													<option value="KY">Kentucky</option>
-												</optgroup>
-												<optgroup label="Eastern Time Zone">
-													<option value="CT">Connecticut</option>
-													<option value="DE">Delaware</option>
-													<option value="WV">West Virginia</option>
-												</optgroup>
-											</select>
-										</div>
-
-										<div class="form-group">
-											<label>Attach screenshot:</label>
-											<input type="file" class="form-input-styled" data-fouc>
-										</div>
-
-										<div class="form-group">
-											<label>Your message:</label>
-											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-										</div>
-									</fieldset>
-								</div>
-
-								<div class="col-md-6">
-									<fieldset>
-					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Shipping details</legend>
-
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>First name:</label>
-													<input type="text" placeholder="Eugene" class="form-control">
-												</div>
-											</div>
-
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Last name:</label>
-													<input type="text" placeholder="Kopyov" class="form-control">
-												</div>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Email:</label>
-													<input type="text" placeholder="eugene@kopyov.com" class="form-control">
-												</div>
-											</div>
-
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Phone #:</label>
-													<input type="text" placeholder="+99-99-9999-9999" class="form-control">
-												</div>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-						                            <label>Country:</label>
-						                            <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
-						                            	<option></option>
-						                                <option value="Cambodia">Cambodia</option> 
-						                                <option value="Cameroon">Cameroon</option> 
-						                                <option value="Canada">Canada</option> 
-						                                <option value="Cape Verde">Cape Verde</option> 
-						                            </select>
-					                            </div>
-											</div>
-
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>State/Province:</label>
-													<input type="text" placeholder="Bayern" class="form-control">
-												</div>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-3">
-												<div class="form-group">
-													<label>ZIP code:</label>
-													<input type="text" placeholder="1031" class="form-control">
-												</div>
-											</div>
-
-											<div class="col-md-3">
-												<div class="form-group">
-													<label>City:</label>
-													<input type="text" placeholder="Munich" class="form-control">
-												</div>
-											</div>
-
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Address line:</label>
-													<input type="text" placeholder="Ring street 12" class="form-control">
-												</div>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label>Additional message:</label>
-											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-										</div>
-									</fieldset>
+				<!-- Basic examples -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic text field</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A simple example of using Alpaca with nothing more than a string of text. Alpaca looks at your data and determines that it is a string. It then looks for a suitable candidate for representing a string and it decides to use the <code>text</code> field.</p>
+								<div id="alpaca-basic"></div>
+								<a href="#alpaca-basic-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-basic-source">
+									<pre class="language-javascript"><code>// Basic text input
+$("#alpaca-basic").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    options: {
+        focus: false
+    }
+});</code></pre>
 								</div>
 							</div>
+						</div>
+					</div>
 
-							<div class="text-right">
-								<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Display only view</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</form>
+						
+							<div class="card-body">
+								<p class="mb-3">Displays a text field using a display-only view. The text field simply prints out and is not editable, a simple block appears instead. This is a default form control type provided by Bootstrap framework.</p>
+								<div id="alpaca-static"></div>
+								<a href="#alpaca-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-static-source">
+									<pre class="language-javascript"><code>// Display only view
+$("#alpaca-static").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    schema: {
+        type: "string"
+    },
+    view: "bootstrap-display"
+});</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>-->
-				<!-- /2 columns form -->
+				<!-- /basic examples -->
+
+
+				<!-- Input labels -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Label for text input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example <strong>text</strong> input field has label. By default appears on top left and uses default Bootstrap styles, including contetual alternatives. To add text label to any input field, use <code>label</code> option inside set of configuration <code>options</code>.</p>
+								<div id="alpaca-input-label"></div>
+								<a href="#alpaca-input-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-input-label-source">
+									<pre class="language-javascript"><code>// Text input label
+$("#alpaca-input-label").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    options: {
+        label: "Input label",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Label for static input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example <strong>static</strong> input field has label. By default appears on top left and uses default Bootstrap styles, including contetual alternatives. To add text label to any input field, use <code>label</code> option inside set of configuration <code>options</code>.</p>
+								<div id="alpaca-static-label"></div>
+								<a href="#alpaca-static-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-static-label-source">
+									<pre class="language-javascript"><code>// Static input label
+$("#alpaca-static-label").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    schema: {
+        type: "string"
+    },
+    options: {
+        label: "Input label"
+    },
+    view: "bootstrap-display"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /input labels -->
+
+
+				<!-- Validation -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Validation</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A more developed example that specifies not only the data but also the schema, options and some basic input validation. In this example text field is limited to minimum 3 characters and maximum 5 characters. Try to change default input value.</p>
+								<div id="alpaca-validation"></div>
+								<a href="#alpaca-validation-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-validation-source">
+									<pre class="language-javascript"><code>// Validation
+$("#alpaca-validation").alpaca({
+    data: "Mint",
+    schema: {
+        minLength: 3,
+        maxLength: 5
+    },
+    options: {
+        label: "Ice Cream",
+        helper: "Your favorite ice cream?",
+        size: 30,
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Predefined value</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example, we intentionally set the data to something that is invalid. The schema specifies that the maximum length of the allowed value is 8 characters. Our value exceeds that and so we receive a message straight away indicating this problem.</p>
+								<div id="alpaca-validation-predefined"></div>
+								<a href="#alpaca-validation-predefined-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-validation-predefined-source">
+									<pre class="language-javascript"><code>// Predefined value
+$("#alpaca-validation-predefined").alpaca({
+    data: "Mint Chocolate",
+    schema: {
+        minLength: 3,
+        maxLength: 5
+    },
+    options: {
+        label: "Ice Cream",
+        helper: "Please tell us the kind of ice cream you love most!",
+        size: 30,
+        focus: false,
+        placeholder: "Enter an ice cream flavor"
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /validation -->
+
+
+				<!-- Disallowance -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disallow empty spaces</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A text with field with <code>disallowEmptySpaces</code> set to <code>true</code>. This prevents the entry of spaces - it doesn't react on pressing space key. This is useful for things like username entry fields, as configured below.</p>
+								<div id="alpaca-disallow-empty"></div>
+								<a href="#alpaca-disallow-empty-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-disallow-empty-source">
+									<pre class="language-javascript"><code>// Disallow empty spaces
+$("#alpaca-disallow-empty").alpaca({
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "lowercase",
+        label: "User Name",
+        disallowEmptySpaces: true,
+        helper: "Type something with empty space",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disallow values</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example we've added a few predefined values, that are not allowed by default. Just place values you want to disallow into <code>disallow</code> option, this will enable input field validation. Try to change input field value to see it in action.</p>
+								<div id="alpaca-disallow-values"></div>
+								<a href="#alpaca-disallow-values-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-disallow-values-source">
+									<pre class="language-javascript"><code>// Disallow values
+$("#alpaca-disallow-values").alpaca({
+    data: "Mickey Mantle",
+    schema: {
+        type: "string",
+        disallow: ["Mickey Mantle", "Mickey"]
+    },
+    options: {
+        label: "Name",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /disallowance -->
+
+
+				<!-- Third party integrations -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Typeahead integration</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">This example uses <code>$.typeahead</code> auto-completion with a function to provide lookup values. The <code>config</code> block defines the first argument into the typeahead plugin. The <code>datasets</code> block defines the second argument into the typeahead plugin.</p>
+								<div id="alpaca-typeahead"></div>
+								<a href="#alpaca-typeahead-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-typeahead-source">
+									<pre class="language-javascript"><code>// Typeahead
+$("#alpaca-typeahead").alpaca({
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "text",
+        label: "Company Name",
+        helper: "Select the name of a computing company",
+        placeholder: "Enter 'a'",
+        focus: false,
+        typeahead: {
+            config: {
+                highlight: true,
+                hint: true,
+                minLength: 1
+            },
+            datasets: {
+                type: "local",
+                displayKey: 'value',
+                source: ["Google", "Amazon", "Microsoft", "Apple", "Spotify", "Alpaca", "Another company", "Facebook"]
+            }
+        }
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Maxlength integration</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">This example constrains the entered text value, forcing it to be at minimum 3 and at most 25. This not only runs validation checks but also enforces some UI behavior. This also shows how many characters are left for <code>maxLength</code> as you type.</p>
+								<div id="alpaca-maxlength"></div>
+								<a href="#alpaca-maxlength-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-maxlength-source">
+									<pre class="language-javascript"><code>// Maxlength
+$("#alpaca-maxlength").alpaca({
+    schema: {
+        type: "string",
+        minLength: 3,
+        maxLength: 25
+    },
+    options: {
+        type: "text",
+        label: "What is your name?",
+        constrainMaxLength: true,
+        constrainMinLength: true,
+        showMaxLengthIndicator: true,
+        focus: false
+    },
+    data: "Jackie Robinson"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /third party integrations -->
+
+
+
+				<!-- Textarea title -->
+				<!--<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Textarea type
+					</h6>
+					<span class="text-muted d-block">Basic examples of textarea</span>
+				</div>-->
+				<!-- /textarea title -->
+
+
+				<!-- Basic textarea -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic textarea</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a simple textarea field with a string of text. Textarea type supports almost all available options for text inputs and also includes basic textarea attributes, such as columns and rows.</p>
+								<div id="alpaca-textarea"></div>
+								<a href="#alpaca-textarea-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-source">
+									<pre class="language-javascript"><code>// Basic textarea
+$("#alpaca-textarea").alpaca({
+    data: "Ice cream or ice-cream...",
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        helper: "Receipt for Best Homemade Ice Cream",
+        rows: 4,
+        cols: 80,
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">With placeholder</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example uses the <code>placeholder</code> option to set up the placeholder text for a text area field. This basic option is available in all input types: text, number, search, url, email, textarea etc.</p>
+								<div id="alpaca-textarea-placeholder"></div>
+								<a href="#alpaca-textarea-placeholder-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-placeholder-source">
+									<pre class="language-javascript"><code>// With placeholder
+$("#alpaca-textarea-placeholder").alpaca({
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        helper: "Receipt for Best Homemade Ice Cream",
+        placeholder: "Enter your favorite ice cream here...",
+        rows: 4,
+        cols: 80,
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /basic textarea -->
+
+
+				<!-- View mode -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">View mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In the following example textarea field is rendered in display-only mode, which means textarea is replaced with div block and can't be editable. To set a view only mode, use <code>bootstrap-display</code>option added to <code>view</code> option.</p>
+								<div id="alpaca-textarea-static"></div>
+								<a href="#alpaca-textarea-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-static-source">
+									<pre class="language-javascript"><code>// View mode
+$("#alpaca-textarea-static").alpaca({
+    data: "Ice cream or ice-cream...",
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        rows: 6,
+        cols: 80,
+        focus: false
+    },
+    view: "bootstrap-display"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Single field render</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example overrides the <code>view</code> property on the field to have just the single field render in an alternate, display-only view. To make it short - <code>view</code> property here is placed inside <code>options</code> property.</p>
+								<div id="alpaca-textarea-override"></div>
+								<a href="#alpaca-textarea-override-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-override-source">
+									<pre class="language-javascript"><code>// Single field render
+$("#alpaca-textarea-override").alpaca({
+    data: "My name is Dr. Jacobian and I am a neuroscientist...",
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "textarea",
+        label: "Tell us about yourself",
+        view: "bootstrap-display"
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /view mode -->
+
+
+
+				<!-- Selects title -->
+				<!--<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Select menus
+					</h6>
+					<span class="text-muted d-block">Basic selects, Multiselect and Select2</span>
+				</div>-->
+				<!-- /selects title -->
+
+
+				<!-- Basic selects -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">Select field with data, options and schema parameters. As default, a select field will be rendered if schema enum property has more than 3 options. The sort order for enumerated values and their text are assumed to be alphanumeric.</p>
+								<div id="alpaca-select"></div>
+								<a href="#alpaca-select-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select-source">
+									<pre class="language-javascript"><code>// Basic select
+$("#alpaca-select").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">External data source</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">Select field with external data source using <code>dataSource</code> option. If a string, it is considered to be a URI to a service that produces a object containing key/value pairs or an array of elements. Function needs to produce the same list.</p>
+								<div id="alpaca-select-external"></div>
+								<a href="#alpaca-select-external-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select-external-source">
+									<pre class="language-javascript"><code>// External data source
+$("#alpaca-select-external").alpaca({
+    options: {
+        label: "Ice cream",
+        helper: "Guess my favorite ice cream?",
+        type: "select",
+        focus: false,
+        dataSource: "../../../../global_assets/demo_data/alpaca/selects.json"
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /basic selects -->
+
+
+				<!-- Multiselect -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic multiselect</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates select menu with multiple select option, based on <code>Bootstrap Multiselect</code> plugin. Default multiselect doesn't provide styled checkboxes, so we are using <code>Uniform</code> plugin for custom look.</p>
+								<div id="alpaca-multiselect"></div>
+								<a href="#alpaca-multiselect-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-multiselect-source">
+									<pre class="language-javascript"><code>// Multiselect
+$("#alpaca-multiselect").alpaca({
+    data: ["Vanilla", "Chocolate"],
+    schema: {
+        type: "array",
+        items: {
+            title: "Ice Cream",
+            type: "string",
+            enum: ["Vanilla", "Chocolate", "Strawberry", "Mint"],
+            minItems: 2,
+            maxItems: 3
+        }
+    },
+    options: {
+        label: "Ice cream",
+        helper: "Guess my favorite ice cream?",
+        type: "select",
+        size: 5,
+        id: "multiselect",
+        focus: false
+    },
+    postRender: function(control) {
+        $("#multiselect").parent().find("input[type=checkbox]").uniform();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Multiselect data source</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">Select field with external data source using <code>dataSource</code> option. If a string, it is considered to be a URI to a service that produces a object containing key/value pairs or an array of elements. Function needs to produce the same list.</p>
+								<div id="alpaca-multiselect-remote"></div>
+								<a href="#alpaca-multiselect-remote-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-multiselect-remote-source">
+									<pre class="language-javascript"><code>// Multiselect with remote data
+$("#alpaca-multiselect-remote").alpaca({
+    options: {
+        label: "Select your favorite flavor of ice cream",
+        type: "select",
+        multiple: true,
+        helper: "Guess my favorite ice cream?",
+        size: 3,
+        focus: false,
+        id: "multiselect-remote",
+        dataSource: "../../../../global_assets/demo_data/alpaca/selects.json"
+    },
+    postRender: function(control) {
+        $("#multiselect-remote").parent().find("input[type=checkbox]").uniform();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /multiselects -->
+
+
+				<!-- Select2 selects -->
+				<!--<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Select2 basic</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates default implementation of Select2 library - here we need to specify select ID first, then initialize Select2 plugin using that ID selector. This is a custom integration, which is not supported in Alpaca by default.</p>
+								<div id="alpaca-select2"></div>
+								<a href="#alpaca-select2-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select2-source">
+									<pre class="language-javascript"><code>// Select2 select
+$("#alpaca-select2").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        id: "select2-basic",
+        focus: false
+    },
+    postRender: function(control) {
+        $('#select2-basic').select2({
+            minimumResultsForSearch: Infinity
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Select2 with search</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates Select2 select with search field - here we need to specify select ID first, then initialize Select2 plugin using that ID selector. This is a custom integration, which is not supported in Alpaca by default.</p>
+								<div id="alpaca-select2-search"></div>
+								<a href="#alpaca-select2-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select2-search-source">
+									<pre class="language-javascript"><code>// Select2 select with search
+$("#alpaca-select2-search").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        id: "select2-search",
+        focus: false
+    },
+    postRender: function(control) {
+        $('#select2-search').select2();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /select2 selects -->
 
 			</div>
 			<!-- /content area -->
@@ -2555,13 +2256,13 @@
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2019 <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">ANNEL</a>
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Ayuda</a></li>
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
 						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-						<!--<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>-->
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
 					</ul>
 				</div>
 			</div>
